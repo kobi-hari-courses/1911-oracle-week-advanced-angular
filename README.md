@@ -1,12 +1,13 @@
 <img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Logo.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Logo.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" height="100">
 
 # Advanced Angular @ Oracle Week 2019
-*By Kobi Hari (20/11/2019)
+*By Kobi Hari (20/11/2019)*
 
+This repository contains all the projects and documentation provided during the Advanced Angular session in Oracle Week 2019 convention. You can find all the projects written live, in addition to some extra material.
 
 ## Contact me
 Please feel free to contact me with questions, or just to have a chat :-)
-*Kobi Hari - hari@applicolors.com
+- Kobi Hari - hari@applicolors.com
 
 ## What will you find here
 Here you can find the projects, and the documentation, that I provided during the session. 
