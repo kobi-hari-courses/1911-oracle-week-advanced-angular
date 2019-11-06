@@ -1,6 +1,6 @@
 <img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Logo.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Logo.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" height="100">
 
-# Advanced Angular using ReactiveX, Redux and Material @ Oracle Week 2019
+# Advanced Angular @ Oracle Week 2019
 *By Kobi Hari (20/11/2019)*
 
 ## Contact me
