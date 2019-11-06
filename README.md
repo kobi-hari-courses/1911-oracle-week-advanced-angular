@@ -5,7 +5,7 @@
 
 ## Contact me
 Please feel free to contact me with questions, or just to have a chat :-)
-Kobi Hari - hari@applicolors.com
+*Kobi Hari - hari@applicolors.com
 
 ## What will you find here
 Here you can find the projects, and the documentation, that I provided during the session. 
