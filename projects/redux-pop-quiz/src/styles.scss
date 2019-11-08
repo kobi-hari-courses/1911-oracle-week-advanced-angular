@@ -11,3 +11,44 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif; 
     display: grid;
 }
+
+$p-keys: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$a-keys: (100:A100, 200:A200, 400:A400, 700:A700);
+$w-keys: (100:100, 200:200, 400:400, 700:700);
+
+:root {
+    @each $key in $p-keys {
+        --p#{$key}: #{map-get($plt-primary, $key)};
+    }
+
+    @each $key, $value in $a-keys {
+        --a#{$key}: #{map-get($plt-accent, $value)};
+    }
+
+    @each $key, $value in $w-keys {
+        --w#{$key}: #{map-get($plt-warn, $value)};
+    }
+
+
+    @each $key in $p-keys {
+        --pc#{$key}: #{map-get($plt-primary-contrast, $key)};
+    }
+
+    @each $key, $value in $a-keys {
+        --ac#{$key}: #{map-get($plt-accent-contrast, $key)};
+    }
+
+    @each $key, $value in $plt-background {
+        --b-#{$key}: #{$value};
+    }
+
+    @each $key, $value in $plt-foreground {
+        --f-#{$key}: #{$value};
+    }
+
+    --primary: #{map-get($plt-primary, default)};
+    --pdarker: #{map-get($plt-primary, darker)};
+    --plighter: #{map-get($plt-primary, lighter)};
+    --accent: #{map-get($plt-accent, default)};
+    --warn: #{map-get($plt-warn, default)};
+}

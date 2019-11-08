@@ -5,3 +5,11 @@ $plt-accent: mat-palette($mat-deep-orange, A200, A100, A400);
 $plt-warn: mat-palette($mat-red);
 
 $theme: mat-light-theme($plt-primary, $plt-accent, $plt-warn);
+
+$plt-primary-contrast: map-get($plt-primary, contrast);
+$plt-accent-contrast: map-get($plt-accent, contrast);
+$plt-warn-contrast: map-get($plt-warn, contrast);
+$plt-background: map-get($theme, background);
+$plt-foreground: map-get($theme, foreground);
+
+
