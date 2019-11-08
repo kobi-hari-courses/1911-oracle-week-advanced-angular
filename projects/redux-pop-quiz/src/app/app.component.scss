@@ -1,54 +1,20 @@
 :host {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
+    display: grid;
     background: var(--b-background);
-    margin: 8px;
+    grid-template-rows: auto 1fr;
 }
 
-div {
-    display: flex;
-    flex-direction: row;
+mat-toolbar-row {
+    justify-content: center;
+    mat-icon {
+        font-size: 40px;
+        width: auto;
+        height: auto;    
+    }
+
+    span {
+        font-size: 32px;
+        margin-left: 16px;
+    }
 }
 
-mat-icon {
-    font-size: 50px;
-    margin: 4px;
-    height: auto;
-    width: auto;
-}
-
-button {
-    margin: 10px;
-}
-
-span {
-    font-size: 24px;
-    margin: 4px;
-}
-
-.buttons {
-    background: var(--p100);
-}
-
-.icons {
-    background: var(--p200);
-}
-
-.texts {
-    background: var(--b-card);
-}
-
-.texts>.primary {
-    background: var(--p100);
-    color: var(--p900);
-    padding: 4px;
-    margin: 4px;
-}
-
-.texts>.accent {
-    background: var(--a100);
-    color: var(--a700);
-    padding: 4px;
-    margin: 4px;
-}
