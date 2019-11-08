@@ -1,3 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
 mat-icon {
     font-size: 50px;
     margin: 4px;
@@ -8,3 +19,9 @@ mat-icon {
 button {
     margin: 10px;
 }
+
+span {
+    font-size: 24px;
+    margin: 4px;
+}
+
