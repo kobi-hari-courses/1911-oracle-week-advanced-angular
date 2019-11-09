@@ -29,13 +29,16 @@ $w-keys: (100:100, 200:200, 400:400, 700:700);
         --w#{$key}: #{map-get($plt-warn, $value)};
     }
 
-
     @each $key in $p-keys {
         --pc#{$key}: #{map-get($plt-primary-contrast, $key)};
     }
 
     @each $key, $value in $a-keys {
         --ac#{$key}: #{map-get($plt-accent-contrast, $key)};
+    }
+
+    @each $key, $value in $w-keys {
+        --wc#{$key}: #{map-get($plt-warn-contrast, $key)};
     }
 
     @each $key, $value in $plt-background {
