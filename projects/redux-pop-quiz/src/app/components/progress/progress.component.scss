@@ -1,0 +1,37 @@
+:host {
+    margin: 12px;
+    display: grid;
+}
+
+.root {
+    display: flex;
+}
+
+.divider {
+    flex: 1;
+    height: 0px;
+    border-bottom: 1px solid var(--f-divider);
+    align-self: center;
+    margin: 4px;
+}
+
+.step {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.future {
+    background: var(--p100);
+    color: var(--pc100);
+}
+
+.correct, .wrong {
+    background: var(--p400);
+    color: var(--pc400)
+}
+
+

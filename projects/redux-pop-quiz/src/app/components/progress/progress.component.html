@@ -1,0 +1,16 @@
+<div class="root">
+    <ng-container *ngFor="let item of data; let i=index; let last = last">
+        <span class="step correct" *ngIf="item===true">
+            <mat-icon>done</mat-icon>
+        </span>
+        <span class="step wrong" *ngIf="item===false">
+            <mat-icon>clear</mat-icon>
+        </span>
+        <span class="step future" *ngIf="item===null">
+            {{i+1}}
+        </span>
+
+        <span class="divider" *ngIf="!last">
+        </span>
+    </ng-container>
+</div>
