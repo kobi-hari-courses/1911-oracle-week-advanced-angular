@@ -1,8 +1,8 @@
-<mat-card class="main-card">
-    <mat-card-title>{{caption}}</mat-card-title>
+<mat-card class="main-card" *ngIf="(currentQuestion$ | async) as question">    
+    <mat-card-title>{{question.caption}}</mat-card-title>
     <mat-card-content>
         <mat-action-list>
-            <mat-list-item *ngFor="let answer of answers; let index = index">
+            <mat-list-item *ngFor="let answer of question.answers; let index = index">
                 <div class="item-content">
                     <span class="index">{{index+1}}</span>
                     <span class="answer">{{answer}}</span>
