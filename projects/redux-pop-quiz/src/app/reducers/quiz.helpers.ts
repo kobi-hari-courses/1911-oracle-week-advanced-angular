@@ -1,3 +1,4 @@
+import { RouterState } from './../services/router-states';
 import { Answer } from './../models/answer';
 import { Question } from '../models/question';
 import { QuizState } from './quiz.state';
@@ -21,6 +22,11 @@ export function getCurrentIndex(state: QuizState): number {
 export function isQuizDone(state:QuizState): boolean {
     return state.answers.filter(a => a.userAnswer === null)
                 .length === 0;
+}
+
+export function getRouterState(state: QuizState): RouterState {
+    let isDone = isQuizDone(state);
+    return isDone ? 'done' : 'question';
 }
 
 export function updateAnswer(state: QuizState, answerIndex: number): QuizState {
