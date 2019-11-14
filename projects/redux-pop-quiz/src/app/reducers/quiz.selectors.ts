@@ -25,3 +25,13 @@ export const selectCurrentQuestion = createSelector(
     selectCurrentIndex,
     (state, index) => state.questions[index]
 );
+
+export const selectCorrectCount = createSelector(
+    selectAllAnswers, 
+    answers => answers.filter(a => a.isCorrect === true).length
+);
+
+export const selectWrongCount = createSelector(
+    selectAllAnswers, 
+    answers => answers.filter(a => a.isCorrect === false).length
+);

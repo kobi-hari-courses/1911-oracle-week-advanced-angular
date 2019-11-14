@@ -1,6 +1,7 @@
 <mat-card class="mat-elevation-z8">
     <mat-card-content>
         <mat-icon>check_circle_outline</mat-icon>
-        <h1>Quiz Done</h1>        
+        <h2>Your score is: {{correct$|async}} out of {{total$ | async}}</h2>
+        <h1>Quiz Done</h1> 
     </mat-card-content>
 </mat-card>
