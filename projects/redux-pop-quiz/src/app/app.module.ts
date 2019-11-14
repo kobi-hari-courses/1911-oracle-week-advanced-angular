@@ -1,3 +1,4 @@
+import { quizReducer } from './reducers/quiz.reducer';
 import { AppMaterialModule } from './app-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,6 +11,7 @@ import { QuizDoneComponent } from './components/quiz-done/quiz-done.component';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { QuizFeatureKey } from './reducers/quiz.state';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { environment } from '../environments/environment';
     BrowserModule,
     AppRoutingModule,    
     BrowserAnimationsModule, 
-    AppMaterialModule, StoreModule.forRoot({}), 
+    AppMaterialModule, 
+    StoreModule.forRoot({[QuizFeatureKey]: quizReducer}), 
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
