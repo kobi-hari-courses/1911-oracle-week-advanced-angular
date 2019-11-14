@@ -1,8 +1,8 @@
-import { selectCurrentQuestion } from './../../reducers/quiz.selectors';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Question } from 'src/app/models/question';
 import { Store } from '@ngrx/store';
+import { QuizSelectors } from 'src/app/reducers/quiz.types';
 
 @Component({
   selector: 'app-question-presenter',
@@ -16,7 +16,8 @@ export class QuestionPresenterComponent implements OnInit {
   constructor(private store: Store<any>) { }
 
   ngOnInit() {
-    this.currentQuestion$ = this.store.select(selectCurrentQuestion);
+    this.currentQuestion$ = 
+      this.store.select(QuizSelectors.selectCurrentQuestion);
   }
 
 }
