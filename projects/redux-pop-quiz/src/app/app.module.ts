@@ -8,6 +8,8 @@ import { ProgressComponent } from './components/progress/progress.component';
 import { QuestionPresenterComponent } from './components/question-presenter/question-presenter.component';
 import { QuizDoneComponent } from './components/quiz-done/quiz-done.component';
 import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { StoreModule } from '@ngrx/store';
     BrowserModule,
     AppRoutingModule,    
     BrowserAnimationsModule, 
-    AppMaterialModule, StoreModule.forRoot({})
+    AppMaterialModule, StoreModule.forRoot({}), 
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
