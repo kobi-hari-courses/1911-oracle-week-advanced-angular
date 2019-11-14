@@ -7,14 +7,10 @@ export const QuizFeatureKey: string = 'quiz';
 
 export interface QuizState {
   questions: Question[], 
-  answers: Answer[], 
-  currentQuestionIndex: number, 
-  isQuizDone: boolean
+  answers: Answer[]
 }
 
 export const initialQuizState: QuizState = {
   questions: AllQuestions, 
   answers: initialAnswers(AllQuestions.length), 
-  currentQuestionIndex: 0, 
-  isQuizDone: false
 }

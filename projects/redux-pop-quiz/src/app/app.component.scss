@@ -1,7 +1,7 @@
 :host {
     display: grid;
     background: var(--b-background);
-    grid-template-rows: auto auto auto 1fr;
+    grid-template-rows: auto auto auto auto auto 1fr;
 }
 
 mat-toolbar-row {
@@ -22,3 +22,9 @@ mat-card {
     margin: 8px;
 }
 
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 16px;
+}
