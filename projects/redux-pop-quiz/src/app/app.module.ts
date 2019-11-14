@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProgressComponent } from './components/progress/progress.component';
 import { QuestionPresenterComponent } from './components/question-presenter/question-presenter.component';
+import { QuizDoneComponent } from './components/quiz-done/quiz-done.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProgressComponent,
-    QuestionPresenterComponent
+    QuestionPresenterComponent,
+    QuizDoneComponent
   ],
   imports: [
     BrowserModule,
