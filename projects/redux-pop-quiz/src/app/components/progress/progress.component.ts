@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Answer } from 'src/app/models/answer';
+import { Store } from '@ngrx/store';
+import { QuizSelectors } from 'src/app/reducers/quiz.types';
 
 @Component({
   selector: 'app-progress',
@@ -6,19 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress.component.scss']
 })
 export class ProgressComponent implements OnInit {
-  data: (boolean | null)[] = [
-    false, 
-    true, 
-    false, 
-    true, 
-    null, 
-    null, 
-    null
-  ]
+  data$: Observable<Answer[]>
 
-  constructor() { }
+  constructor(private store: Store<any>) { }
 
   ngOnInit() {
+    this.data$ = this.store.select(QuizSelectors.selectAllAnswers);
   }
 
 }

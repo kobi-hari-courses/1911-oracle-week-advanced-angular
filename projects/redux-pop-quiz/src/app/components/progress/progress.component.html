@@ -1,12 +1,12 @@
-<div class="root">
+<div class="root" *ngIf="(data$ | async) as data">
     <ng-container *ngFor="let item of data; let i=index; let last = last">
-        <span class="step correct" *ngIf="item===true">
+        <span class="step correct" *ngIf="item.isCorrect===true">
             <mat-icon>done</mat-icon>
         </span>
-        <span class="step wrong" *ngIf="item===false">
+        <span class="step wrong" *ngIf="item.isCorrect===false">
             <mat-icon>clear</mat-icon>
         </span>
-        <span class="step future" *ngIf="item===null">
+        <span class="step future" *ngIf="item.isCorrect===null">
             {{i+1}}
         </span>
 

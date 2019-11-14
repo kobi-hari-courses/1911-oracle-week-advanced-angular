@@ -13,7 +13,12 @@ export const selectCurrentIndex = createSelector(
 export const selectIsDone = createSelector(
     selectState, 
     state => isQuizDone(state)
-)
+);
+
+export const selectAllAnswers = createSelector(
+    selectState, 
+    state => state.answers
+);
 
 export const selectCurrentQuestion = createSelector(
     selectState,
