@@ -8,6 +8,11 @@ import { Observer, Observable, interval, Subscription, Subject, BehaviorSubject 
 })
 export class AppComponent {
   subs: Subscription[] = [];
+  isShowingPresenter: boolean = true;
+
+  togglePresenter() {
+    this.isShowingPresenter = !this.isShowingPresenter;
+  }
 
   createObserver(id: number): Observer<number> {
     console.info(`Created observer ${id}`);

@@ -1,3 +1,9 @@
 <h1>RxJS Introduction</h1>
 <button (click)="start()">Start!</button>
 <button (click)="stop()">Stop!</button>
+
+<hr>
+<button (click)="togglePresenter()">Toggle Presenter</button>
+<br>
+<app-counter-editor></app-counter-editor>
+<app-counter-presenter *ngIf="isShowingPresenter"></app-counter-presenter>
