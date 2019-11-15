@@ -14,7 +14,7 @@ Here you can find the projects, and the documentation, that I provided during th
 Specifically:
 ### Projects:
 - **hello-rxjs** - Search colors using *Observables*, *Observers*, *Subjects*, and *Operators*
-- **redux-pop-quiz** - A "Multiple Question" quiz implemented using NgRx and Material
+- [**redux-pop-quiz**](https://github.com/kobi2294/OracleWeek2019/tree/master/projects/redux-pop-quiz) - A "Multiple Question" quiz implemented using NgRx and Material
 
 ## Some relevant links
 ### Docmentation
