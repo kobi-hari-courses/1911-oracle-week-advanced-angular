@@ -24,16 +24,19 @@ export class AppComponent {
       setTimeout(() => observer.next(2), 3000);
       setTimeout(() => observer.next(3), 6000);
       setTimeout(() => observer.next(4), 8000);
-      setTimeout(() => observer.next(5), 10000);
+      setTimeout(() => observer.complete(), 10000);
     });
     return res;
   }
 
   start() {
     let observer1 = this.createObserver(1);
-    let observer2 = this.createObserver(2);
-
     let observable1 = this.createObservable();
-    observable1.subscribe(observer1);    
+    observable1.subscribe(observer1);
+    
+    setTimeout(() => {
+      let observer2 = this.createObserver(2);
+      observable1.subscribe(observer2); 
+    }, 4000);
   }
 }
