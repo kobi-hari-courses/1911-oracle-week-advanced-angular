@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observer, Observable, interval, Subscription, Subject } from 'rxjs';
+import { Observer, Observable, interval, Subscription, Subject, BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -41,13 +41,23 @@ export class AppComponent {
     return subject;
 }
 
+createBehaviorSubject(): Observable<number> {
+  let subject = new BehaviorSubject<number>(0);
+  setTimeout(() => subject.next(1), 1000);
+  setTimeout(() => subject.next(2), 3000);
+  setTimeout(() => subject.next(3), 6000);
+  setTimeout(() => subject.next(4), 8000);
+  setTimeout(() => subject.complete(), 10000);
+  return subject;
+}
+
   createInterval(): Observable<number> {
     return interval(1000);
   }
 
   start() {
     let observer1 = this.createObserver(1);
-    let observable1 = this.createSubject();
+    let observable1 = this.createBehaviorSubject();
     this.subs.push(observable1.subscribe(observer1));
     
     setTimeout(() => {
