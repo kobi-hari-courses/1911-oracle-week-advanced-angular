@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observer, Observable, interval } from 'rxjs';
+import { Observer, Observable, interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,8 @@ import { Observer, Observable, interval } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  subs: Subscription[] = [];
+
   createObserver(id: number): Observer<number> {
     console.info(`Created observer ${id}`);
     let res: Observer<number> = {
@@ -36,11 +38,15 @@ export class AppComponent {
   start() {
     let observer1 = this.createObserver(1);
     let observable1 = this.createInterval();
-    observable1.subscribe(observer1);
+    this.subs.push(observable1.subscribe(observer1));
     
     setTimeout(() => {
       let observer2 = this.createObserver(2);
-      observable1.subscribe(observer2); 
+      this.subs.push(observable1.subscribe(observer2));
     }, 4000);
+  }
+
+  stop() {
+    this.subs.forEach(sub => sub.unsubscribe());
   }
 }
