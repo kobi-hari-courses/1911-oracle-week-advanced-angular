@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observer, Observable } from 'rxjs';
+import { Observer, Observable, interval } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -29,9 +29,13 @@ export class AppComponent {
     return res;
   }
 
+  createInterval(): Observable<number> {
+    return interval(1000);
+  }
+
   start() {
     let observer1 = this.createObserver(1);
-    let observable1 = this.createObservable();
+    let observable1 = this.createInterval();
     observable1.subscribe(observer1);
     
     setTimeout(() => {
