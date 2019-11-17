@@ -1,16 +1,6 @@
 <img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Logo.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Logo.png" height="100">
 
-<img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" height="100">
-
-<img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" height="100">
-
-<img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" height="100">
-
-<img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular Material.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular Material.png" height="100">
-
-<img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Redux.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Redux.png" height="100">
-
-<img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" height="100">
+<img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/RxJS.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Material.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular Material.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Angular Material.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Redux.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Redux.png" height="100"><img src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" data-canonical-src="https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/NgRx.png" height="100">
 
 # Advanced Angular @ Oracle Week 2019
 *By Kobi Hari (20/11/2019)*
@@ -43,4 +33,5 @@ Specifically:
 - **Marble Diagrams of Reactive Operators** - [https://rxmarbles.com/]
 - **Example Rest API for TV Shows** - [https://www.tvmaze.com/api]
 - **Auto creation of data model from json** - [https://app.quicktype.io/]
+
 
