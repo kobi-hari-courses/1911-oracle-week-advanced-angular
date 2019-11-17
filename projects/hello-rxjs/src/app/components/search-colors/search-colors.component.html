@@ -1,6 +1,7 @@
 <strong>Search colors</strong>
 <input type="search" (input)="search(searchBox.value)" #searchBox>
-keyword: {{keyword$|async}}
+<span>keyword: {{keyword$|async}}</span>
+<span>search: {{searches$|async}}</span>
 <hr>
 <div class="results">
     <div class="item" *ngFor="let res of results"

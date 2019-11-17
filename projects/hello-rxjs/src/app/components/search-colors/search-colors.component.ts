@@ -1,3 +1,4 @@
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { ColorModel } from './../../models/color.model';
 import { ColorsService } from './../../services/colors.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,6 +11,10 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class SearchColorsComponent implements OnInit {
   keyword$ = new BehaviorSubject<string>('');
+  searches$ = this.keyword$.pipe(
+    debounceTime(500), 
+    distinctUntilChanged()
+  );
 
   results: ColorModel[];  
 

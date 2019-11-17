@@ -11,3 +11,10 @@
     padding: 10px;
     margin: 10px;
 }
+
+span {
+    display: block;
+    background: lightgray;
+    margin: 4px;
+    padding: 4px;
+}
