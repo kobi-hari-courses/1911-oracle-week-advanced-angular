@@ -1,4 +1,4 @@
-import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { debounceTime, distinctUntilChanged, map, mergeMap, switchMap } from 'rxjs/operators';
 import { ColorModel } from './../../models/color.model';
 import { ColorsService } from './../../services/colors.service';
 import { Component, OnInit } from '@angular/core';
@@ -16,7 +16,19 @@ export class SearchColorsComponent implements OnInit {
     distinctUntilChanged()
   );
 
-  results: ColorModel[];  
+  // WRONG!
+  // results$ = this.searches$.pipe(
+  //   map(word => this.colorsService.search(word))
+  // );
+
+  // Technically correct, but shows cancelled results!
+  // results$ = this.searches$.pipe(
+  //   map(word => this.colorsService.search(word))
+  // );
+
+  results$ = this.searches$.pipe(
+    switchMap(word => this.colorsService.search(word))
+  );
 
   constructor(private colorsService: ColorsService) { }
 

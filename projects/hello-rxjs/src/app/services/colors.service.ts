@@ -24,7 +24,7 @@ export class ColorsService {
       .map(entry => {return <ColorModel> {displayName: entry[1], code: entry[0]}})
       .filter(color => color.displayName.toLowerCase().includes(filter));
     
-    await this.delay(2000);
+    await this.delay(4000);
     return res;
   }
 }

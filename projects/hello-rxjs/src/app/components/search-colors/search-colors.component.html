@@ -2,9 +2,10 @@
 <input type="search" (input)="search(searchBox.value)" #searchBox>
 <span>keyword: {{keyword$|async}}</span>
 <span>search: {{searches$|async}}</span>
+<span *ngIf="(results$|async) as results">search: {{results.length}}</span>
 <hr>
 <div class="results">
-    <div class="item" *ngFor="let res of results"
+    <div class="item" *ngFor="let res of (results$|async)"
         [style.background]="res.code"
     >
         {{res.displayName}}
