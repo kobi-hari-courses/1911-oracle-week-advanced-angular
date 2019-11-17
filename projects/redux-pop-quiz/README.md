@@ -48,7 +48,8 @@ In this project we will demostrate the following:
 | 19 | [Actions](https://github.com/kobi2294/OracleWeek2019/commit/8541f2d878e2bb4327089a731e202c70621aaf9d) | Added Reset and Answer actions and grouped them into `QuizActions` name |
 | 20 | [Reducers](https://github.com/kobi2294/OracleWeek2019/commit/360089d30d4c86da4f075476f20a16fa78a3bb74) | Improved Selectors to minimize state, and added reducer logic |
 | 21 | [Progress Wired to Store](https://github.com/kobi2294/OracleWeek2019/commit/95fd3facbdbd348f0023233ed958e5b82a0567c6) | Added selector for progress component and modified bindings |
-| 22 | [Added Final Score](https://github.com/kobi2294/OracleWeek2019/commit/55ad2841d8a969dca31b2978b2459c9c38fad6be) | Added selectors for score, and presented them in the quiz done component |
+| 22 | [Router Logic](https://github.com/kobi2294/OracleWeek2019/commit/96105b28327c27c25e3c1656a02ad7a5c94e5459) | Added router logic service that monitors the state and does navigation to the proper url |
+| 23 | [Added Final Score](https://github.com/kobi2294/OracleWeek2019/commit/55ad2841d8a969dca31b2978b2459c9c38fad6be) | Added selectors for score, and presented them in the quiz done component |
 
 ## Version Information
 |||
