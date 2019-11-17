@@ -1,6 +1,7 @@
 import { ColorModel } from './../../models/color.model';
 import { ColorsService } from './../../services/colors.service';
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-search-colors',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-colors.component.css']
 })
 export class SearchColorsComponent implements OnInit {
+  keyword$ = new BehaviorSubject<string>('');
+
   results: ColorModel[];  
 
   constructor(private colorsService: ColorsService) { }
@@ -15,9 +18,8 @@ export class SearchColorsComponent implements OnInit {
   ngOnInit() {
   }
 
-  async search(keyword: string) {
-    console.log('searching ' + keyword);
-    this.results = await this.colorsService.search(keyword);
+  search(keyword: string) {
+    this.keyword$.next(keyword);
   }
 
 }
