@@ -1,8 +1,11 @@
 <strong>Search colors</strong>
 <input type="search" (input)="search(searchBox.value)" #searchBox>
+<img src="https://raw.githubusercontent.com/knight-rider1609/MultiProgressBar/master/versatileprogressbar/src/main/res/drawable/gear_duo.gif" *ngIf="isBusy$ | async">
 <span>keyword: {{keyword$|async}}</span>
 <span>search: {{searches$|async}}</span>
 <span *ngIf="(results$|async) as results">search: {{results.length}}</span>
+<span>isbusy: {{isBusy$|async}}</span>
+
 <hr>
 <div class="results">
     <div class="item" *ngFor="let res of (results$|async)"

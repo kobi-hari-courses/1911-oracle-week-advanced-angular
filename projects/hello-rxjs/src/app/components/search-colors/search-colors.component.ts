@@ -2,7 +2,7 @@ import { debounceTime, distinctUntilChanged, map, mergeMap, switchMap } from 'rx
 import { ColorModel } from './../../models/color.model';
 import { ColorsService } from './../../services/colors.service';
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, merge } from 'rxjs';
 
 @Component({
   selector: 'app-search-colors',
@@ -29,6 +29,16 @@ export class SearchColorsComponent implements OnInit {
   results$ = this.searches$.pipe(
     switchMap(word => this.colorsService.search(word))
   );
+
+  busyStart$ = this.searches$.pipe(
+    map(_=> true)
+  );
+
+  busyEnd$ = this.results$.pipe(
+    map(_=> false)
+  );
+
+  isBusy$ = merge(this.busyStart$, this.busyEnd$);
 
   constructor(private colorsService: ColorsService) { }
 

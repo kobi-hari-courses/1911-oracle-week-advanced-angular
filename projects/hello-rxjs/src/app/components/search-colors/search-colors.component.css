@@ -18,3 +18,8 @@ span {
     margin: 4px;
     padding: 4px;
 }
+
+img {
+    height: 32px;
+    padding: 8px;
+}
