@@ -1,2 +1,12 @@
-<h1>Search colors</h1>
-<button (click)="search()">Search</button>
+<strong>Search colors</strong>
+<input type="search" #keyword>
+<button (click)="search(keyword.value)">Search</button>
+
+<hr>
+<div class="results">
+    <div class="item" *ngFor="let res of results"
+        [style.background]="res.code"
+    >
+        {{res.displayName}}
+    </div>
+</div>

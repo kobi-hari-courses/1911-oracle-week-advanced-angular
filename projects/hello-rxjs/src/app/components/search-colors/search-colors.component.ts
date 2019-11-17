@@ -1,3 +1,4 @@
+import { ColorModel } from './../../models/color.model';
 import { ColorsService } from './../../services/colors.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-colors.component.css']
 })
 export class SearchColorsComponent implements OnInit {
+  results: ColorModel[];  
 
   constructor(private colorsService: ColorsService) { }
 
   ngOnInit() {
   }
 
-  async search() {
-    console.log('searching green');
-    let results = await this.colorsService.search('green');
-    console.log(results);
+  async search(keyword: string) {
+    console.log('searching ' + keyword);
+    this.results = await this.colorsService.search(keyword);
   }
 
 }
