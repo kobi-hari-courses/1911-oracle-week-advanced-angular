@@ -18,6 +18,10 @@ Specifically:
 - [**hello-rxjs**](https://github.com/kobi2294/OracleWeek2019/tree/master/projects/hello-rxjs) - Search colors using *Observables*, *Observers*, *Subjects*, and *Operators*
 - [**redux-pop-quiz**](https://github.com/kobi2294/OracleWeek2019/tree/master/projects/redux-pop-quiz) - A "Multiple Question" quiz implemented using NgRx and Material
 
+### Presentation and Video
+- [**A Video of the second demo**](https://www.dropbox.com/s/u7tmy6bikyx47vn/ORACLE%20WEEK%202019.mp4?dl=0)
+- [**The Presentation**](https://github.com/kobi2294/OracleWeek2019/blob/master/presentations/Presentation.pdf)
+
 ## Some relevant links
 ### Docmentation
 - **Typescript** - [https://www.typescriptlang.org/docs/home.html]
