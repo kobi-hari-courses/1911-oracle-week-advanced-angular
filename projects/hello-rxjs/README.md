@@ -52,9 +52,10 @@ In this project we will demonstrate the following:
 ### Colors Example - Operators
 | # | Link | Description |
 |---|---|---|
-| 12 | [Colors Service](https://github.com/kobi2294/OracleWeek2019/commit/0ecb77d9b1da9256aa493e023530ab839bd07f4c) | Added colors model, data and service |
-| 13 | [Search UI](https://github.com/kobi2294/OracleWeek2019/commit/38b7583d05d24bc44c6602e198c513e25faf12ea) | Added search box and results presentation |
-| 14 | [Keyword Subject](https://github.com/kobi2294/OracleWeek2019/commit/1d353ca6c374971f47c8d3898ef9e008bf389bf8) | Keyword is now an behavior subject updated from the UI on evey keypress |
-| 15 | [Debounce and Distinct](https://github.com/kobi2294/OracleWeek2019/commit/d4cf92fedda6442aa016a737ae421ea52ec9ae1f) | Created a `Search$` observable which sends an event for each required search |
-| 16 | [Results](https://github.com/kobi2294/OracleWeek2019/commit/0bba10d8655ced52dfc9ce5e1d59ead496e9bbb6) | The results observable now uses switchMap to notify when new results are available |
-| 17 | [Busy](https://github.com/kobi2294/OracleWeek2019/commit/a339270b90955eed28fef1d4cdf04ddebf461dda) | Added observable that indicated the busy state, and an animated busy indicator |
+| 12 | [Colors Model and Service](https://github.com/kobi2294/OracleWeek2019/commit/a305907826030eb066a2dc220d98da9d5480cd4f) | Color model, a HUGE list of colors, and a service that searches in them |
+| 13 | [Colors Service](https://github.com/kobi2294/OracleWeek2019/commit/0ecb77d9b1da9256aa493e023530ab839bd07f4c) | Added colors model, data and service |
+| 14 | [Search UI](https://github.com/kobi2294/OracleWeek2019/commit/38b7583d05d24bc44c6602e198c513e25faf12ea) | Added search box and results presentation |
+| 15 | [Keyword Subject](https://github.com/kobi2294/OracleWeek2019/commit/1d353ca6c374971f47c8d3898ef9e008bf389bf8) | Keyword is now an behavior subject updated from the UI on evey keypress |
+| 16 | [Debounce and Distinct](https://github.com/kobi2294/OracleWeek2019/commit/d4cf92fedda6442aa016a737ae421ea52ec9ae1f) | Created a `Search$` observable which sends an event for each required search |
+| 17 | [Results](https://github.com/kobi2294/OracleWeek2019/commit/0bba10d8655ced52dfc9ce5e1d59ead496e9bbb6) | The results observable now uses switchMap to notify when new results are available |
+| 18 | [Busy](https://github.com/kobi2294/OracleWeek2019/commit/a339270b90955eed28fef1d4cdf04ddebf461dda) | Added observable that indicated the busy state, and an animated busy indicator |
